@@ -36,3 +36,17 @@ echo "текст" | sudo tee файл - записать текст в файл 
 ping -c 3 8.8.8.8 - есть ли интернет
 ping -c 3 github.com - работает ли DNS 
 sudo systemctl restart systemd-resolved - перезапустить DNS
+
+## Процессы
+ps aux - все процессы
+htop - монитор (q  - выход)
+sleep 600 & - запустить в фоне
+pgrep имя - найти PID
+kill PID - завершить, kill -9 PID - принудительно
+Ctrl+C - прервать, Ctrl+Z - пауза
+jobs, bg, fg - управление фоном
+
+## Пакеты
+apt update - обновить список; apt upgrade - обновить программы
+apt istall / remove / purge имя
+apt show / search
